@@ -13,5 +13,19 @@
             "email": "ptg@nijitei.com"
         }
     ],
-    "minimum-stability": "dev"
+    "keywords": ["laravel", "navigation", "menu"],
+    "autoload": {
+        "psr-4": {
+            "Pinfort\\LaravelTopNav\\": "src/"
+        }
+	},
+    "minimum-stability": "dev",
+    "include-path": ["src/"],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Pinfort\\LaravelTopNav\\TopNavServiceProvider"
+            ]
+        }
+    }
 }
