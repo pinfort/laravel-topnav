@@ -29,6 +29,10 @@ class TopNavServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__.'/views' => resource_path('views/vendor/LaravelTopNav'),
         ]);
+
+        $this->publishes([
+            __DIR__.'/assets' => public_path('vendor/LaravelTopNav'),
+        ], 'public');
     }
 
     /**
