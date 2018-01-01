@@ -1,0 +1,17 @@
+{
+    "name": "pinfort/laravel-topnav",
+    "description": "Create simple top navigation for laravel",
+    "type": "library",
+    "require": {
+        "php": ">=5.3.0",
+        "illuminate/support": ">=4.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "pinfort",
+            "email": "ptg@nijitei.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
