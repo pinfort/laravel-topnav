@@ -31,7 +31,7 @@ class TopNavServiceProvider extends ServiceProvider
         ]);
 
         $this->publishes([
-            __DIR__.'/assets' => public_path('vendor/LaravelTopNav'),
+            __DIR__.'/assets' => public_path('vendor/TopNav'),
         ], 'public');
     }
 
