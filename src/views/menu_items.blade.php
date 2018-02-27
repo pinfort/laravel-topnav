@@ -11,7 +11,7 @@
                 </li>
             @endif
         <?php else: ?>
-            <li><a href="{{ $path }}">{{ trans('LaravelTopNav::ui.top_nav.'.$name) }}</a></li>
+            <li><a class="nav-link" href="{{ $path }}">{{ trans('LaravelTopNav::ui.top_nav.'.$name) }}</a></li>
         <?php endif; ?>
     @endforeach
 </ul>
