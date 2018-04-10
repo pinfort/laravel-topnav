@@ -3,7 +3,7 @@
     @foreach($menu as $name => $path)
         <?php if(is_array($path)): ?>
             <li class="dropdown multi-level nav-item">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                     {{ $name }}
                 </a>
                 @include('LaravelTopNav::menu_items', ['depth' => 0, 'items' => $path])
