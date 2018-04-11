@@ -1,5 +1,4 @@
 <ul class="nav navbar-nav">
-    <?php $menu = config('top_nav.menu'); ?>
     @foreach ($menu as $name => $path)
         @if (is_array($path))
             <li class="dropdown multi-level nav-item">

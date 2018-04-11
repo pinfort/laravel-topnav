@@ -3,6 +3,7 @@
 namespace Pinfort\LaravelTopNav;
 
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Facades\Blade;
 
 class TopNavServiceProvider extends ServiceProvider
 {
@@ -33,6 +34,10 @@ class TopNavServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__.'/assets' => public_path('vendor/TopNav'),
         ], 'public');
+
+        Blade::directive('laraveltopnav', function() {
+            return Blade::compileString("@include('LaravelTopNav::menu', ['menu' => config('top_nav.menu')])");
+        });
     }
 
     /**

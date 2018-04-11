@@ -62,7 +62,7 @@ near the line 39
 -<ul class="nav navbar-nav">
 -    &nbsp;
 -</ul>
-+@include('LaravelTopNav::menu')
++@laraveltopnav
 ```
 
 ### Now it works!
