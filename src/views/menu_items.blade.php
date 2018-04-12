@@ -10,7 +10,7 @@
                 </li>
             @endif
         @else
-            <li class="nav-item"><a class="nav-link" href="{{ $path }}">@lang('LaravelTopNav::ui.top_nav.'.$name)</a></li>
+            <li class="nav-item"><a class="nav-link" href="{{ $path }}">@topnavlang($name)</a></li>
         @endif
     @endforeach
 </ul>
